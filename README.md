@@ -1,6 +1,6 @@
 
 
-Package Name : Segmentation
+**Package Name : Segmentation**
 
 Methods :
 
@@ -15,12 +15,12 @@ Below lists are returned by the function :
 The function returns 4 lists :
  
 1. X_train - The data for training a model. Shape - ( # of words in training set, maximum possible wordlength)
-2. y_train - The labels for training a model. - ( # of words in training set, maximum possible wordlength)
-3. X_test - The data for testing a model. - ( # of words in test set, maximum possible wordlength)
-4. y_test - The labels for testing a model. - ( # of words in test set, maximum possible wordlength)
+2. y_train - The labels for training a model. Shape - ( # of words in training set, maximum possible wordlength)
+3. X_test - The data for testing a model. - Shape ( # of words in test set, maximum possible wordlength)
+4. y_test - The labels for testing a model. - Shape ( # of words in test set, maximum possible wordlength)
 
 
-Package Name : morphtagging
+**Package Name : morphtagging**
 
 For all the methods in this package, first the data file is loaded which contains inflected word along with the binary encoded labels. For noun, verb and adjective, different methods are provided to prepare the tagging dataset.
 
@@ -66,18 +66,18 @@ The character based tokenizer is applied to convert a word into sequence of char
 
 Below lists are returned by the function :
 
-1.X_train - Training data for common for all the features - Shape - ( # of words in training set, maximum possible wordlength)</br>
-2.X_test - Testing data for common for all the features - Shape - ( # of words in test set, maximum possible wordlength)</br>
-3.y_train_person - Labels for training person classifier - Shape - ( # of words in training set, 4)</br>
-4.y_train_gender - Labels for training gender classifier - Shape - ( # of words in training set, 4)</br>
-5.y_train_tense - Labels for training tense classifier - Shape - ( # of words in training set, 4)</br>
-6.y_train_aspect - Labels for training aspect classifier - Shape - ( # of words in training set, 5)</br>
-7.y_train_number - Labels for training number classifier - Shape - ( # of words in training set, 3)</br>
-8.y_test_person - Labels for testing person classifier - Shape - ( # of words in testing set, 4)</br>
-9.y_test_gender - Labels for testing gender classifier - Shape - ( # of words in testing set, 4)</br>
-10.y_test_tense  - Labels for testing tense classifier - Shape - ( # of words in testing set, 4)</br>
-11.y_test_aspect - Labels for testing aspect classifier - Shape - ( # of words in testing set, 5)</br>
-12.y_test_number - Labels for testing number classifier - Shape - ( # of words in testing set, 3)</br>
+1. X_train - Training data for common for all the features - Shape - ( # of words in training set, maximum possible wordlength)</br>
+2. X_test - Testing data for common for all the features - Shape - ( # of words in test set, maximum possible wordlength)</br>
+3. y_train_person - Labels for training person classifier - Shape - ( # of words in training set, 4)</br>
+4. y_train_gender - Labels for training gender classifier - Shape - ( # of words in training set, 4)</br>
+5. y_train_tense - Labels for training tense classifier - Shape - ( # of words in training set, 4)</br>
+6. y_train_aspect - Labels for training aspect classifier - Shape - ( # of words in training set, 5)</br>
+7. y_train_number - Labels for training number classifier - Shape - ( # of words in training set, 3)</br>
+8. y_test_person - Labels for testing person classifier - Shape - ( # of words in testing set, 4)</br>
+9. y_test_gender - Labels for testing gender classifier - Shape - ( # of words in testing set, 4)</br>
+10. y_test_tense  - Labels for testing tense classifier - Shape - ( # of words in testing set, 4)</br>
+11. y_test_aspect - Labels for testing aspect classifier - Shape - ( # of words in testing set, 5)</br>
+12. y_test_number - Labels for testing number classifier - Shape - ( # of words in testing set, 3)</br>
 
 - prepare_adjective_tagging_data : For adjective category, there are 3 features. Type, gender and number. Labels are created as per the possible values each feature can take. The details of the classification labels are as below :</br>
 Type - 2 labels (type_1, type_2)
@@ -90,11 +90,11 @@ The character based tokenizer is applied to convert a word into sequence of char
 
 Below lists are returned by the function :</br>
 
-1.X_train - Training data for common for all the features - Shape - ( # of words in training set, maximum possible wordlength)</br>
-2.X_test - Testing data for common for all the features - Shape - ( # of words in test set, maximum possible wordlength)</br>
-3.y_train_type - Labels for training type classifier - Shape - ( # of words in training set, 2)</br>
-4.y_train_gender - Labels for training gender classifier - Shape - ( # of words in training set, 4)</br>
-5.y_train_number - Labels for training number classifier - Shape - ( # of words in training set, 3)</br>
-6.y_test_type - Labels for testing type classifier - Shape - ( # of words in training set, 2)</br>
-7.y_test_gender - Labels for testing gender classifier - Shape - ( # of words in training set, 4)</br>
-8.y_test_number - Labels for testing number classifier - Shape - ( # of words in training set, 3)</br>
+1. X_train - Training data for common for all the features - Shape - ( # of words in training set, maximum possible wordlength)</br>
+2. X_test - Testing data for common for all the features - Shape - ( # of words in test set, maximum possible wordlength)</br>
+3. y_train_type - Labels for training type classifier - Shape - ( # of words in training set, 2)</br>
+4. y_train_gender - Labels for training gender classifier - Shape - ( # of words in training set, 4)</br>
+5. y_train_number - Labels for training number classifier - Shape - ( # of words in training set, 3)</br>
+6. y_test_type - Labels for testing type classifier - Shape - ( # of words in training set, 2)</br>
+7. y_test_gender - Labels for testing gender classifier - Shape - ( # of words in training set, 4)</br>
+8. y_test_number - Labels for testing number classifier - Shape - ( # of words in training set, 3)</br>
