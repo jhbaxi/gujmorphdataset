@@ -1,4 +1,19 @@
 
+# The dataset for Gujarati morph analyzer.
+
+
+This project contains the dataset for training and evaluation of the morphological analyzer for the Gujarati language. Along with the dataset, packages are created which returns the corresponding training and testing data sets which can be directl plugged into any machine learning model.</br>
+Steps to use the package :
+- Create a new folder named D:\GujMorph
+- Inside GujMorph, create a subfolder with the name 'morphdata'.
+- Create an empty __init__.py file in the morphdata folder.
+- Copy the dataset excel files and python source files into morphdata folder.
+- Using the regular terminal, nevigate to GujMorph directory.
+- For importing segmentation module, write **from morphdata import Segmentation**
+- For importing morphtagging module, write **from morphdata import morphtagging**
+
+The description of Segmentation and morphtagging modules along with the corresponding methods is given below.
+## Description of packages
 
 **Package Name : Segmentation**
 
@@ -51,7 +66,9 @@ Below lists are returned by the function :
 8. y_test_case - Labels for testing case classifier - Shape - ( # of words in testing set, 6)  
 
 
-- prepare_verb_tagging_data : For verb category, there are 5 features. Person, gender, tense, aspect and number. Labels are created as per the possible values each feature can take. The details of the classification labels are as below :
+- prepare_verb_tagging_data</br>
+
+For verb category, there are 5 features. Person, gender, tense, aspect and number. Labels are created as per the possible values each feature can take. The details of the classification labels are as below :
 Person : 4 labels ( person_1, person_2, person_3, person_4)
 
 Gender : 4 labels ( gender_1, gender_2, gender_3, gender_4)
@@ -79,7 +96,9 @@ Below lists are returned by the function :
 11. y_test_aspect - Labels for testing aspect classifier - Shape - ( # of words in testing set, 5)</br>
 12. y_test_number - Labels for testing number classifier - Shape - ( # of words in testing set, 3)</br>
 
-- prepare_adjective_tagging_data : For adjective category, there are 3 features. Type, gender and number. Labels are created as per the possible values each feature can take. The details of the classification labels are as below :</br>
+- prepare_adjective_tagging_data</br>
+
+For adjective category, there are 3 features. Type, gender and number. Labels are created as per the possible values each feature can take. The details of the classification labels are as below :</br>
 Type - 2 labels (type_1, type_2)
 
 Gender - 4 labels ( gender_1, gender_2, gender_3, gender_4)
@@ -98,3 +117,64 @@ Below lists are returned by the function :</br>
 6. y_test_type - Labels for testing type classifier - Shape - ( # of words in training set, 2)</br>
 7. y_test_gender - Labels for testing gender classifier - Shape - ( # of words in training set, 4)</br>
 8. y_test_number - Labels for testing number classifier - Shape - ( # of words in training set, 3)</br>
+
+## Description of the dataset files
+
+- seg_input_18_Aug.xls : The first collumn contain an inflected word and the second collumn contains the binary root word encoding. For example the root form of a word કલાકો is કલાક so corresponding root word encoding will be 00010.
+- input_n_mcml.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not. Below is the description of noun features. 
+
+Collumn Name  | Feature
+------------- | -------------
+gender_male  | The gender of given noun is *Male*
+gender_female | The gender of given noun is *Female*
+gender_neutral | The gender of given noun is *Neutral*
+number_singular | The number of given noun is *Singular*
+number_plural | The number of given noun is *Plural*
+case_nominative | The case of given noun is *Nominative*
+case_genitive | The case of given noun is *Genitive*
+case_locative | The case of given noun is *Locative*
+case_ergative | The case of given noun is *Ergative*
+case_dative | The case of given noun is *Dative*
+case_ablative | The case of given noun is *Ablative*
+
+- verb_onehot.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not.
+Below is the description of noun features.
+
+Collumn Name  | Feature
+------------- | -------------
+person_1  | 
+person_2 | 
+person_3  | 
+person_4 | 
+gender_1  | 
+gender_2 | 
+gender_3  | 
+gender_4 | 
+tense_1  | 
+tense_2 | 
+tense_3  | 
+tense_4 |
+aspect_1  | 
+aspect_2 | 
+aspect_3  | 
+aspect_4 |
+aspect_5 |
+number_1  | 
+number_2 | 
+number_3  | 
+
+
+- master_data_adjective_3347.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not. 
+Below is the description of noun features.
+
+Collumn Name  | Feature
+------------- | -------------
+type_1  | 
+type_2 | 
+gender_1  | 
+gender_2 | 
+gender_3  | 
+gender_4 | 
+number_1  | 
+number_2 | 
+number_3  | 
