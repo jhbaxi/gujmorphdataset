@@ -142,26 +142,26 @@ Below is the description of noun features.
 
 Collumn Name  | Feature
 ------------- | -------------
-person_1  | 
-person_2 | 
-person_3  | 
-person_4 | 
-gender_1  | 
-gender_2 | 
-gender_3  | 
-gender_4 | 
-tense_1  | 
-tense_2 | 
-tense_3  | 
-tense_4 |
-aspect_1  | 
-aspect_2 | 
-aspect_3  | 
-aspect_4 |
-aspect_5 |
-number_1  | 
-number_2 | 
-number_3  | 
+person_1  | First Person
+person_2 | Second Person
+person_3  | Third Person
+person_4 | Person can not be determined
+gender_1  | Gender Male
+gender_2 |  Gender Female
+gender_3  | Gender Neutral
+gender_4 | Gender can not be determined
+tense_1  | Future Tense
+tense_2 | Present Tense
+tense_3  | Past Tense
+tense_4 | Tense can not be determined
+aspect_1  | Simple Aspect
+aspect_2 | Perfect Progressive Aspect
+aspect_3  | Perfect aspect
+aspect_4 | Progressive aspect
+aspect_5 | Aspect can not be determined
+number_1  | Number Singular
+number_2 |  Number Plural
+number_3  | Number can not be determined
 
 
 - master_data_adjective_3347.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not. 
@@ -169,12 +169,12 @@ Below is the description of noun features.
 
 Collumn Name  | Feature
 ------------- | -------------
-type_1  | 
-type_2 | 
-gender_1  | 
-gender_2 | 
-gender_3  | 
-gender_4 | 
-number_1  | 
-number_2 | 
-number_3  | 
+type_1  | Non Inflecting adjective
+type_2 |  Inflecting adjective
+gender_1  | Gender Male
+gender_2 | Gender Female
+gender_3  | Gender Neutral
+gender_4 | Gender can not be determined
+number_1  | Number Singular
+number_2 |  Number Plural
+number_3  | Number can not be determined
