@@ -120,8 +120,8 @@ Below lists are returned by the function :</br>
 
 ## Description of the dataset files
 
-- seg_input_18_Aug.xls : The first collumn contain an inflected word and the second collumn contains the binary root word encoding. For example the root form of a word કલાકો is કલાક so corresponding root word encoding will be 00010.
-- input_n_mcml.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not. Below is the description of noun features. 
+- morph_segmentation.xls : The first collumn contain an inflected word and the second collumn contains the binary root word encoding. For example the root form of a word કલાકો is કલાક so corresponding root word encoding will be 00010.
+- morph_tagging_noun.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not. Below is the description of noun features. 
 
 Collumn Name  | Feature
 ------------- | -------------
@@ -137,7 +137,7 @@ case_ergative | The case of given noun is *Ergative*
 case_dative | The case of given noun is *Dative*
 case_ablative | The case of given noun is *Ablative*
 
-- verb_onehot.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not.
+- morph_tagging_verb.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not.
 Below is the description of noun features.
 
 Collumn Name  | Feature
@@ -164,7 +164,7 @@ number_2 |  Number Plural
 number_3  | Number can not be determined
 
 
-- master_data_adjective_3347.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not. 
+- morph_tagging_adjective.xls : The first collumn contains an inflected word and the remaining collumns contains binary values indicating whether the perticular feature is set or not. 
 Below is the description of noun features.
 
 Collumn Name  | Feature
